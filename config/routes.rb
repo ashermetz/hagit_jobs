@@ -1,4 +1,10 @@
 HagitJobs::Application.routes.draw do
+  resources :hours
+
+
+  resources :jobs
+
+
   get "home/index"
 
   # The priority is based upon order of creation:

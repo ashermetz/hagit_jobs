@@ -11,11 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131206124212) do
+ActiveRecord::Schema.define(:version => 20131206140305) do
+
+  create_table "hours", :force => true do |t|
+    t.date     "date"
+    t.string   "job"
+    t.float    "amount"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "jobs", :force => true do |t|
-    t.string   "jobs"
+    t.string   "job"
     t.float    "pay_per_hour"
+    t.float    "add_hour_per"
     t.string   "description"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false

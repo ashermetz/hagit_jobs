@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  date: 2013-12-06
   job: MyString
-  pay_per_hour: 1.5
-  add_hour_per: 1.5
-  description: MyString
+  amount: 1.5
 
 two:
+  date: 2013-12-06
   job: MyString
-  pay_per_hour: 1.5
-  add_hour_per: 1.5
-  description: MyString
+  amount: 1.5
